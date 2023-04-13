@@ -1,3 +1,5 @@
 *.iml
 out
 .ide
+/PROG_Boletin29/nbproject/private/
+/PROG_Boletin29/build/
