@@ -402,27 +402,42 @@ public class Calculadora extends javax.swing.JFrame {
         try{
                     op2=Double.parseDouble(lineaTexto.getText());
                 }catch(Exception err){}
-                if(operacion.equals("suma")){
+        switch (operacion) {
+            case "suma":
+                {
                     double res=op1+op2;
                     lineaTexto.setText(String.valueOf(res));
                     op1=op2=0;
                     operacion="";
-                }else if(operacion.equals("resta")){
+                    break;
+                }
+            case "resta":
+                {
                     double res=op1-op2;
                     lineaTexto.setText(String.valueOf(res));
                     op1=op2=0;
                     operacion="";
-                }else if(operacion.equals("multiplicacion")){
+                    break;
+                }
+            case "multiplicacion":
+                {
                     double res=op1*op2;
                     lineaTexto.setText(String.valueOf(res));
                     op1=op2=0;
                     operacion="";
-                }else if(operacion.equals("division")){
+                    break;
+                }
+            case "division":
+                {
                     double res=op1/op2;
                     lineaTexto.setText(String.valueOf(res));
                     op1=op2=0;
                     operacion="";
+                    break;
                 }
+            default:
+                break;
+        }
                 nueva=true;
     }//GEN-LAST:event_botonIgualActionPerformed
 
