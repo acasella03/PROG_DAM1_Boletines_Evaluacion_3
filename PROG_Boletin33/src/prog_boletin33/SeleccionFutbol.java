@@ -18,7 +18,7 @@ public abstract class SeleccionFutbol implements IntegranteSeleccionFutbol {
 
     @Override
     public String toString() {
-        return "SeleccionFutbol:\n" + "ID=" + id + "\nNombre=" + nombre + "\nApellidos=" + apellidos + "\nEdad=" + edad;
+        return "ID=" + id + "\nNombre=" + nombre + "\nApellidos=" + apellidos + "\nEdad=" + edad;
     }
     
 }

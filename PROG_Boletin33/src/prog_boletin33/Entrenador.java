@@ -40,4 +40,11 @@ public class Entrenador extends SeleccionFutbol {
         System.out.println("El entrenador está planificando un entrenamiento");
     }
 
+    @Override
+    public String toString() {
+        return "\n\nENTRENADOR:\n"+super.toString()+"\nIDFederacion=" + idFederacion;
+    }
+    
+    
+
 }
