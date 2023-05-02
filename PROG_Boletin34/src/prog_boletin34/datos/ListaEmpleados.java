@@ -10,7 +10,7 @@ public class ListaEmpleados {
     ArrayList <Empleado> lista=new ArrayList<>();
     
     public ArrayList<Empleado> agregarEmpleado(ArrayList<Empleado> lista) {
-        Empleado empleado= new EContratado(PedirDatos.pedirDatos("DNI:"),PedirDatos.pedirDatos("Nombre:"),PedirDatos.pedirDatos("Apellidos:"),GregorianCalendar.getInstance().getTimeInMillis(),PedirDatos.pedirFloat("Salario:"));
+        Empleado empleado= new EContratado(PedirDatos.pedirDatos("DNI:"),PedirDatos.pedirDatos("Nombre:"),PedirDatos.pedirDatos("Apellidos:"),PedirDatos.pedirFecha(),PedirDatos.pedirFloat("Salario:"));
         lista.add(empleado);
         return lista;
 
