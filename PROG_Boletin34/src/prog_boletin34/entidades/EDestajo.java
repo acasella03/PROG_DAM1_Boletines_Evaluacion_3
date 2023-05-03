@@ -1,19 +1,17 @@
 package prog_boletin34.entidades;
 
-import java.util.GregorianCalendar;
-
 public class EDestajo extends Empleado{
     
     private int numeroCliente;
-    private float complemento;
+    private float comisionPorCliente;
 
     public EDestajo() {
     }
 
-    public EDestajo(int numeroCliente, float complemento, String dni, String nombre, String apellidos, GregorianCalendar fechaIngreso) {
+    public EDestajo(String dni, String nombre, String apellidos, String fechaIngreso, int numeroCliente, float comisionPorCliente) {
         super(dni, nombre, apellidos, fechaIngreso);
         this.numeroCliente = numeroCliente;
-        this.complemento = complemento;
+        this.comisionPorCliente = comisionPorCliente;
     }
 
     public int getNumeroCliente() {
@@ -24,17 +22,9 @@ public class EDestajo extends Empleado{
         this.numeroCliente = numeroCliente;
     }
 
-    public float getComplemento() {
-        return complemento;
-    }
-
-    public void setComplemento(float complemento) {
-        this.complemento = complemento;
-    }
-
     @Override
     public String toString() {
-        return super.toString() + "\nNúmero de Clientes: " + numeroCliente + "\nComplemento: " + complemento;
+        return super.toString() + "\nNúmero de Clientes: " + numeroCliente+"\n";
     }
     
     

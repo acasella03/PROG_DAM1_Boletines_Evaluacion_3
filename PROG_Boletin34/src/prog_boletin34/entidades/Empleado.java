@@ -1,17 +1,15 @@
 package prog_boletin34.entidades;
 
-import java.util.GregorianCalendar;
-
 public class Empleado {
     private String dni;
     private String nombre;
     private String apellidos;
-    private GregorianCalendar fechaIngreso;
+    private String fechaIngreso;
 
     public Empleado() {
     }
 
-    public Empleado(String dni, String nombre, String apellidos, GregorianCalendar fechaIngreso) {
+    public Empleado(String dni, String nombre, String apellidos, String fechaIngreso) {
         this.dni = dni;
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -42,11 +40,11 @@ public class Empleado {
         this.apellidos = apellidos;
     }
 
-    public GregorianCalendar getFechaIngreso() {
+    public String getFechaIngreso() {
         return fechaIngreso;
     }
 
-    public void setFechaIngreso(GregorianCalendar fechaIngreso) {
+    public void setFechaIngreso(String fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
     }
 
@@ -54,6 +52,5 @@ public class Empleado {
     public String toString() {
         return "EMPLEADO:\nDNI: " + dni + "\nNombre: " + nombre + "\nApellidos: " + apellidos + "\nFecha de Ingreso: " + fechaIngreso;
     }
-    
     
 }
