@@ -27,8 +27,8 @@ public class EContratado extends Empleado {
         return super.toString() + "\nSalario: " + salario + "\n";
     }
 
-    public float complementoSalarial(String fechaIngreso) {
-        fechaIngreso = new Empleado().getFechaIngreso();
+    public float complementoSalarial() {
+        String fechaIngreso = super.getFechaIngreso();
         String[] fechaPartes = fechaIngreso.split("/");
         int dia = Integer.parseInt(fechaPartes[0]);
         int mes = Integer.parseInt(fechaPartes[1]) - 1; // los meses en GregorianCalendar van de 0 a 11

@@ -11,6 +11,7 @@ public class PROG_Boletin34 {
         ListaEmpleados empleados=new ListaEmpleados();
         empleados.agregarEmpleado(lista);
         empleados.mostrarLista(lista);
+        
     }
     
 }
