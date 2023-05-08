@@ -3,15 +3,15 @@ package prog_boletin34.entidades;
 public class EDestajo extends Empleado{
     
     private int numeroCliente;
-    private float comisionPorCliente;
+    private float comision;
 
     public EDestajo() {
     }
 
-    public EDestajo(String dni, String nombre, String apellidos, String fechaIngreso, int numeroCliente, float comisionPorCliente) {
+    public EDestajo(String dni, String nombre, String apellidos, String fechaIngreso, int numeroCliente, float comision) {
         super(dni, nombre, apellidos, fechaIngreso);
         this.numeroCliente = numeroCliente;
-        this.comisionPorCliente = comisionPorCliente;
+        this.comision = comision;
     }
 
     public int getNumeroCliente() {
@@ -21,10 +21,14 @@ public class EDestajo extends Empleado{
     public void setNumeroCliente(int numeroCliente) {
         this.numeroCliente = numeroCliente;
     }
+    
+    public float comisionPorCliente(){
+        return this.comision*this.numeroCliente;
+    }
 
     @Override
     public String toString() {
-        return super.toString() + "\nNúmero de Clientes: " + numeroCliente+"\n";
+        return super.toString() + "\nNúmero de Clientes: " + numeroCliente+"\nComisión: "+ comision;
     }
     
     
